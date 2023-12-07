@@ -3,7 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/banktwo/styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="/banktwo/assets/favicon.ico" />
     <title>BankTwo</title>
   </head>
-  <body></body>
+  <body>
+    <div class="navbar justify-content-md-center justify-content-sm-between">
+      <div class="title-logo mx-3">
+        <t1 class="title-logo1">Bank</t1
+        ><t1 class="title-logo2"><strong>Two</strong></t1>
+      </div>
+      <ul class="nav justify-content-center py-2 d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Credit Cards</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Checking and Savings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Business</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Auto</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Search Cars</a></li>
+            <li><a class="dropdown-item" href="#">Refinance Cars</a></li>
+            <li><a class="dropdown-item" href="#">Calculate Auto Loan</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Get Pre-Qualified</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-md-none">
+        <button
+          class="navbar-toggler mx-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link-mobile" aria-current="page" href="#"
+                  >Credit Cards</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-mobile" href="#">Checking and Savings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link-mobile" href="#">Business</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link-mobile dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Auto
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item-mobile" href="#">Search Cars</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item-mobile" href="#">Refinance a Car</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item-mobile" href="#"
+                      >Calculate Auto-Loan</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item-mobile" href="#"
+                      >Get Pre-Qualified</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btnSearchMobile" type="submit">Go</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
